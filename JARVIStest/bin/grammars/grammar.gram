@@ -1,0 +1,29 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar source file
+ */
+
+grammar grammar;
+
+public <hi> = (hi);
+public <hello> = (hello);
+public <greet> = (how are you);
+public <name> = ( what's your name);
+public <turnofflight> = (turn off the lights);
+public <turnonlight> = (turn on the lights);
+public <dimthelights> = (dim the lights);
+public <lockthedoors> = (lock the doors);
+public <unlockthedoors> = (unlock the doors);
+public <openthegaragedoor> = (open the garage door);
+
+public <showcamera1> = (show camera one);
+public <showcamera2> = (show camera two);
+public <showcamera3> = (show camera three);
+public <showcamera4> = (show camera four);
+public <turnontoaster> = (turn on the toaster);
+public <heattheovento200degrees> = (heat the oven to two hundred degrees);
+public <heattheovento300degrees> = (heat the oven to three hundred degrees);
+public <heattheovento400degrees> = (heat the oven to four hundred degrees);
+public <heattheovento500degrees> = (heat the oven to five hundred degrees);
+
