@@ -37,6 +37,7 @@ public class VoicePanel extends JPanel {
 	//Initialize thread and create a boolean variable as switcher 
 	private Thread	speechThread;
 	private volatile boolean threadOn = true;
+	private int firstclick = 0;
 	
 	public VoicePanel() {
 		
@@ -89,6 +90,10 @@ public class VoicePanel extends JPanel {
 		@Override
 		public void actionPerformed(ActionEvent event) {
 			
+			
+			if(firstclick == 0){
+			
+			firstclick++;
 			speechRecognizer();
 			
 			//Check if the microphone is avaliable 
@@ -99,15 +104,17 @@ public class VoicePanel extends JPanel {
 			
 			// Start the thread
 			speechThread.start();
+
 			
-			
-			
-			
-		}
-			else
+			}else
 				response.setText("Microphone is not avaliable.");
 			
 		}	
+		else
+			threadOn = true;
+			
+		}
+		
 	}
 		/**Action method for stop button
 		turn off speech recognizer when pressed **/
@@ -180,7 +187,7 @@ public class VoicePanel extends JPanel {
 		
 							result = speechResult.getHypothesis();
 							
-							response.append("\n Recongnized command: °∞" + result + "°±");
+							response.append("\n Recongnized command: ‚Äú" + result + "‚Äù");
 							//makeDecision(result);
 							new Decision(result);
 		
