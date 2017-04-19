@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import gsu.jarvis.text.SentenceDetector;
+import gsu.jarvis.text.Decision;
 
 import javax.swing.JScrollPane;
 
@@ -69,11 +69,10 @@ public class TextPanel extends JPanel {
 		public void actionPerformed(ActionEvent event) {
 			
 			String input = inputfield.getText().toLowerCase();
-			SentenceDetector sentencedetector = new SentenceDetector(input);
+			Decision detector = new Decision(input);
 	
-			//TODO print out sentences for testing purpose 
-		      for(String sentence : sentencedetector.getSentense())        
-		         System.out.println(sentence.replaceAll("[()?:!.,;{}]+", " "));  
+			response.append("JARVIS response: \n"+detector.getResponse()+"\n");
+
 			
 			
 			
