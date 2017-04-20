@@ -4,25 +4,25 @@ package gsu.jarvis.text;
 public class Oven {
 	
 	
-public void turnOn() {
+protected void turnOn() {
 		
 Decision.setResponse("The oven is on, what temperature do you want to cook?");
 		
 }
 
-public void setTemp(int x ) {
+protected void setTemp(int x ) {
 	
 	Decision.setResponse("OK! heating the oven to " + x + " degrees");
 	
 }
 
-public void turnOFF() {
+protected void turnOFF() {
 	
 	Decision.setResponse("Turning oven off");
 	
 }
 
-public void timerSet(int y ) {
+protected void timerSet(int y ) {
 	
 	if(y > 0) {
 		
