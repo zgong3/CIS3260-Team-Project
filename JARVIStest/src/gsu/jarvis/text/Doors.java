@@ -4,12 +4,12 @@ package gsu.jarvis.text;
 public class Doors {
 
 
-	public void shutDoor() {
+	protected void shutDoor() {
 		
 		Decision.setResponse("Ok, closing door");
 
 	}
-	public void openDoor() {
+	protected void openDoor() {
 		
 		Decision.setResponse("Of course, Opening door now");
 		
