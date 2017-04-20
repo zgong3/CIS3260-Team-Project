@@ -180,11 +180,14 @@ public class VoicePanel extends JPanel {
 			
 			
 			//loop the speech recognizer
-			
 					while (threadOn) {
-			
-						SpeechResult speechResult = recognizer.getResult();
-		
+						try {
+							
+							SpeechResult speechResult = recognizer.getResult();
+						
+							//sleep for some period
+							Thread.sleep(350);
+						
 							result = speechResult.getHypothesis();
 							
 							response.append("\n Recongnized command: “" + result + "”");
@@ -194,8 +197,8 @@ public class VoicePanel extends JPanel {
 							response.append("\n JARVIS responded.");
 										
 							//sleep for some period
-							try {
-								Thread.sleep(350);
+							Thread.sleep(350);
+							
 							} catch (InterruptedException e) {
 								e.printStackTrace();
 							}
