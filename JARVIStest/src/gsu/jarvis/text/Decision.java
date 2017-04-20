@@ -28,7 +28,7 @@ public class Decision {
 	
 	
 	
-   public void detector() { 
+   private void detector() { 
 
  
 		//Create tokenizer
@@ -120,7 +120,7 @@ public String getResponse() {
 
 
 
-public static void setResponse(String response) {
+protected static void setResponse(String response) {
 	Decision.RESPONSE = response;
 }
 
