@@ -2,10 +2,17 @@ package gsu.jarvis.text;
 
 
 public class Oven {
-
-public void preHeat(int x ) {
 	
-	Decision.setResponse("OK! Preheating oven to " + x);
+	
+public void turnOn() {
+		
+Decision.setResponse("The oven is on, what temperature do you want to cook?");
+		
+}
+
+public void setTemp(int x ) {
+	
+	Decision.setResponse("OK! heating the oven to " + x + " degrees");
 	
 }
 
