@@ -18,7 +18,7 @@ public class Decision {
 		
 	}
 
-	public void makeDecision(String speech) {
+	private void makeDecision(String speech) {
 
 		if ("hi".equalsIgnoreCase(speech) || "hello".equalsIgnoreCase(speech)){
 			textToSpeech.speak("Hi, I am JARVIS, your intelligent assistant, how can I help you?", 1.5f, false, true);
