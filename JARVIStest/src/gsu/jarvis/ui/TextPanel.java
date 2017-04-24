@@ -17,10 +17,10 @@ import javax.swing.JScrollPane;
 
 public class TextPanel extends JPanel {
 	
-	JLabel instruction = new JLabel("Enter your command here:");
-	JButton Start = new JButton("Tell JARVIS");
-	JTextArea inputfield = new JTextArea();
-	JTextArea response = new JTextArea();
+	private final JLabel instruction = new JLabel("Enter your command here:");
+	private final JButton Start = new JButton("Tell JARVIS");
+	private final JTextArea inputfield = new JTextArea();
+	private final JTextArea response = new JTextArea();
 	private final JScrollPane scrollPane = new JScrollPane();
 	private final JScrollPane scrollPane_1 = new JScrollPane();
 	
