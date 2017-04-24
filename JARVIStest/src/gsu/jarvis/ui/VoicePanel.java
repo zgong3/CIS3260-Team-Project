@@ -38,7 +38,7 @@ public class VoicePanel extends JPanel {
 	private volatile boolean threadOn = true;
 	private int firstclick = 0;
 	
-	public VoicePanel() {
+		public VoicePanel() {
 		
 		
 		setLayout(null);
@@ -60,6 +60,7 @@ public class VoicePanel extends JPanel {
 		scrollPane.setViewportView(response);
 		response.setLineWrap(true);
 		response.setWrapStyleWord(true);
+		response.setEditable(false);
 		
 		//Config status label
 		Status.setFont(new Font("Arial", Font.BOLD, 20));
