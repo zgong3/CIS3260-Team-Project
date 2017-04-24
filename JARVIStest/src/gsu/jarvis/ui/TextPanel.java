@@ -22,6 +22,7 @@ public class TextPanel extends JPanel {
 	private final JTextArea inputfield = new JTextArea();
 	private final JTextArea response = new JTextArea();
 	private final JScrollPane scrollPane = new JScrollPane();
+
 	private final JScrollPane scrollPane_1 = new JScrollPane();
 	
 	public TextPanel(){
@@ -49,6 +50,7 @@ public class TextPanel extends JPanel {
 		scrollPane_1.setViewportView(response);
 		response.setLineWrap(true);
 		response.setWrapStyleWord(true);
+		response.setEditable(false);
 		
 		//Config instruction label
 		instruction.setFont(new Font("Comic Sans MS", Font.PLAIN, 13));
