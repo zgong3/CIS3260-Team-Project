@@ -12,13 +12,13 @@ import java.awt.event.ActionListener;
 public class MainWindow {
 
 	
-	JFrame frame = new JFrame("JARVIS");
+	private final JFrame frame = new JFrame("JARVIS");
 	
-	JPanel panelSwitch = new JPanel();
+	private final JPanel panelSwitch = new JPanel();
 
-	JPanel panelMenu = new JPanel();
+	private final JPanel panelMenu = new JPanel();
 	
-	CardLayout cl = new CardLayout();
+	private final CardLayout cl = new CardLayout();
 	
 	public MainWindow(TextPanel panelText, VoicePanel panelVoice){
 		
