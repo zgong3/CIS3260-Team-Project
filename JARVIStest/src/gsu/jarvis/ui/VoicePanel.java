@@ -27,11 +27,10 @@ import javax.swing.JScrollPane;
 
 public class VoicePanel extends JPanel {
 
-	Decision decision;
-	JLabel Status = new JLabel("Status: OFF");
-	JButton Start = new JButton("Start");
-	JButton Stop = new JButton("Stop");
-	JTextArea response = new JTextArea();
+	private final JLabel Status = new JLabel("Status: OFF");
+	private final JButton Start = new JButton("Start");
+	private final JButton Stop = new JButton("Stop");
+	private final JTextArea response = new JTextArea();
 	private final JScrollPane scrollPane = new JScrollPane();
 	
 	//Initialize thread and create a boolean variable as switcher 
