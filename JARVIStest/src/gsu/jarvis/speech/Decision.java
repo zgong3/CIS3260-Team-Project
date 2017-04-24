@@ -7,7 +7,7 @@ import tts.TextToSpeech;
 
 public class Decision {
 	
-	String response;
+	private String response;
 	TextToSpeech textToSpeech = new TextToSpeech();
 	
 	public Decision(String input) {
