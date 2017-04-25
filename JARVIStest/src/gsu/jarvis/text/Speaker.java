@@ -11,7 +11,7 @@ public class Speaker {
   
   protected void turnSpeakeroff() {
     
-      Decision.setResponse("Speakers are off! ")
+      Decision.setResponse("Speakers are off! ");
         
 }
 
