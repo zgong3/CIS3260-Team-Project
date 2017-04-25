@@ -37,7 +37,7 @@ public class Decision {
 		    ArrayList<String> inputwords = new ArrayList<String>(Arrays.asList(simpleTokenizer.tokenize(input)));
 		    
 		    /**greeting commands**/
-		    if(inputwords.contains("how are you")){
+		   if(inputwords.contains("how") && inputwords.contains("are") && inputwords.contains("you")){
 		    	greet.howAreYou();
 		    }
 		    else if(inputwords.contains("hi")){
