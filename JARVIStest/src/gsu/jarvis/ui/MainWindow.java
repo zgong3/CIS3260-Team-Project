@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 
 public class MainWindow {
 
+	private final ImageIcon title = new ImageIcon("graphics/JARVISPNG.png");
 	
 	private final JFrame frame = new JFrame("JARVIS");
 	
@@ -52,8 +53,10 @@ public class MainWindow {
 		panelSwitch.add(panelText, "3");
 		cl.show(panelSwitch, "1");
 		
-
-		
+		//add logo image
+		JLabel logo = new JLabel(title);
+		logo.setBounds(35, 50, 220, 60);
+		panelMenu.add(logo);
 		
 		//add and config voice button
 		JButton Voice = new JButton("Voice Mode");
