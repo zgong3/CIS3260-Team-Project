@@ -16,7 +16,6 @@ public <dimthelights> = (dim the lights);
 public <lockthedoors> = (lock the doors);
 public <unlockthedoors> = (unlock the doors);
 public <openthegaragedoor> = (open the garage door);
-
 public <showcamera1> = (show camera one);
 public <showcamera2> = (show camera two);
 public <showcamera3> = (show camera three);
@@ -26,4 +25,10 @@ public <heattheovento200degrees> = (heat the oven to two hundred degrees);
 public <heattheovento300degrees> = (heat the oven to three hundred degrees);
 public <heattheovento400degrees> = (heat the oven to four hundred degrees);
 public <heattheovento500degrees> = (heat the oven to five hundred degrees);
-
+public <raisethetemp1degree> = (raise the temperature one degree);
+public <raisethetemp5degrees> = (raise the temperature five degrees);
+public <openthegaragedoor> = (open the garage door);
+public <closethegaragedoor> = (close the garage door);
+public <emergency> = (we have an emergency);
+public <callthepolice> = (call the police);
+public <callanambulance> = (call an ambulance);
