@@ -2,28 +2,30 @@ package gsu.jarvis.text;
 
 public class Lights {
 	
-protected void turnLightsOn() {
+	protected void turnLightsOn() {
 	
 	Decision.setResponse("lights are on! ");
+	
 }
 
-protected void turnlightsOff() {
+	protected void turnlightsOff() {
 	
 	Decision.setResponse("Ok lights are off!");
 	
 }
+
+	protected void dimLights() {
 	
-protected void leaveLightsOnShort() {
-	
-	Decision.setResponse("Ok, I will leave lights on for 10 minutes ");
+	Decision.setResponse("The light has beem dimmed.");
 	
 }
+
+	protected void brightenLights() {
 	
-protected void leavelightsOnLong() {
-	
-	Decision.setResponse("Ok, I will leave lights on for 30 minutes ");
+	Decision.setResponse("The light is now brighter.");
 	
 }
 
 
 }
+
