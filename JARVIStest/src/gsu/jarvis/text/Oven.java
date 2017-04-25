@@ -4,27 +4,32 @@ package gsu.jarvis.text;
 public class Oven {
 	
 	
-protected void turnOn() {
+	protected void turnOn() {
 		
-Decision.setResponse("The oven is on, what temperature do you want to cook?");
+	Decision.setResponse("The oven is on.\nwhat temperature do you want to cook?");
 		
 }
 
-protected void setTemp(int x ) {
+	protected void setTemp(int x ) {
+		
+		if(x != -1){
 	
-	Decision.setResponse("OK! heating the oven to " + x + " degrees");
+	Decision.setResponse("OK! heating the oven to " + x + " degrees.\nPlease enter cooking time in minutes。");
 	
+		}
+		else
+			Decision.setResponse("Sorry, this temperature is invalid.");
 }
 
-protected void turnOFF() {
+	protected void turnOFF() {
 	
 	Decision.setResponse("Turning oven off");
 	
 }
 
-protected void timerSet(int y ) {
+	protected void timerSet(int y ) {
 	
-	if(y > 0) {
+	if(y != -1) {
 		
 		Decision.setResponse("Setting timer to " + y + " minutes long");
 	
@@ -32,7 +37,7 @@ protected void timerSet(int y ) {
 	
 	else {
 		
-		Decision.setResponse("Time must be more than 0");
+		Decision.setResponse("Sorry, this numer is invalid");
 		
 	}
 		
