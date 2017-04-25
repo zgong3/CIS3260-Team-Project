@@ -2,9 +2,6 @@ package gsu.jarvis.speech;
 
 import tts.TextToSpeech;
 
-
-
-
 public class Decision {
 	
 	private String response;
@@ -104,16 +101,38 @@ public class Decision {
 			textToSpeech.speak("excellent choice sir, may I reccommend some play boy Carti, or perhaps some famous dex", 1.5f, false, true);
 			
 		}
-		
-		
+		else if ("raise the temperature one degree".equalsIgnoreCase(speech)){
+			textToSpeech.speak("Turning up the thermostat one degree", 1.5f, false, true);
+			
+		}
+		else if ("raise the temperature five degrees".equalsIgnoreCase(speech)){
+			textToSpeech.speak("Turning up the thermostat five degrees", 1.5f, false, true);
+			
+		}
+		else if ("open the garage door".equalsIgnoreCase(speech)){
+			textToSpeech.speak("garage door opening", 1.5f, false, true);
+			
+		}
+		else if ("close the garage door".equalsIgnoreCase(speech)){
+			textToSpeech.speak("Closing the garage door", 1.5f, false, true);
+			
+		}
+		else if ("we have an emergency".equalsIgnoreCase(speech)){
+			textToSpeech.speak("Say call an ambulance or call the police", 1.5f, false, true);
+		}
+		else if ("call the police".equalsIgnoreCase(speech)){
+			textToSpeech.speak("Calling the police", 1.5f, false, true);			
+		}
+		else if ("call an ambulance".equalsIgnoreCase(speech)){
+			textToSpeech.speak("Calling an ambulance", 1.5f, false, true);			
+		}
+		else if ("call my phone".equalsIgnoreCase(speech)){
+			textToSpeech.speak("Calling your phone", 1.5f, false, true);			
+		}
 		else if ("<unk>".equalsIgnoreCase(speech)){
 			textToSpeech.speak("Sorry, I can't understand what you said.", 1.5f, false, true);
 
 		}
-		
-	
-
-	
 
 	}
 }
