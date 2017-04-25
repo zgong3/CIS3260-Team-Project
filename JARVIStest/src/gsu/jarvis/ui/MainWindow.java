@@ -1,11 +1,10 @@
 package gsu.jarvis.ui;
+
 import javax.swing.*;
-
 import java.awt.*;
-
 import java.awt.event.ActionEvent;
-
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 
 
 
@@ -110,6 +109,33 @@ public class MainWindow {
 			public void actionPerformed(ActionEvent arg0) {
 
 				cl.show(panelSwitch, "3");
+
+			}
+		});	
+		
+	/**Action method for about button
+	Show program information when pressed **/
+
+	About.addActionListener(new ActionListener() {
+
+			@Override
+
+			public void actionPerformed(ActionEvent arg0) {
+
+			JOptionPane.showMessageDialog(null, "CIS 3260 Term Project"
+					+ "\nTeam leader: "
+					+ "\nZhanpeng Gong"
+					+ "\nTeam member: "
+					+ "\nAtiya Hossain"
+					+ "\nJonathan Clark"
+					+ "\nDamien Blue"
+					+ "\nAlex Xu"
+					+ "\nProject Contribution:"
+					+ "\nUser interface - Zhanpeng Gong"
+					+ "\nLogic framework - Zhanpeng Gong"
+					+ "\nSpeech recognization - Zhanpeng Gong, Damien Blue"
+					+ "\nText input detection - Zhanpeng Gong"
+					+ "\nCommands and responses - Zhanpeng Gong, Jonathan Clark, Alex Xu ");
 
 			}
 		});		
