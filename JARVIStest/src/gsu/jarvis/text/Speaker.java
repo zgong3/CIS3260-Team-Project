@@ -27,7 +27,7 @@ public class Speaker {
     
 }
   
-  protected voide speakerVolumeHigh() {
+  protected void speakerVolumeHigh() {
     
       Decision.setResponse("Speaker volume is on high ");
   
