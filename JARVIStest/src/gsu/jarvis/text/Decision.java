@@ -1,10 +1,14 @@
 package gsu.jarvis.text;
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import opennlp.tools.tokenize.SimpleTokenizer;  
+
+/**
+ * @author Zhanpeng Gong
+ * Decision class including OpenNLP tokenizer and decide response based on existing keywords
+ */
 
 public class Decision { 
 
