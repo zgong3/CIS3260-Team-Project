@@ -73,14 +73,7 @@ public class MainWindow {
 		JButton About = new JButton("About");
 		About.setFont(new Font("Comic Sans MS", Font.BOLD, 13));
 		About.setBounds(85, 240, 120, 30);
-		panelMenu.add(About);
-		
-		JLabel title = new JLabel("JARVIS");
-		title.setFont(new Font("Yu Gothic UI Light", Font.BOLD, 48));
-		title.setBounds(70, 50, 160, 65);
-		panelMenu.add(title);
-		
-	
+		panelMenu.add(About);		
 		
 	
 	/**Action method for voice button
