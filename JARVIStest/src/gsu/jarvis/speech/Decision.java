@@ -2,6 +2,11 @@ package gsu.jarvis.speech;
 
 import tts.TextToSpeech;
 
+/**
+ * @author Zhanpeng Gong
+ * Make voice response using text to speech library
+ */
+
 public class Decision {
 	
 	private String response;
