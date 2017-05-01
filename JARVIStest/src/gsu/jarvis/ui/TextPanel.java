@@ -69,10 +69,11 @@ public class TextPanel extends JPanel {
 
 		@Override
 		public void actionPerformed(ActionEvent event) {
-			
+			//Get input string from textarea and convert to lower case for simplicity
 			String input = inputfield.getText().toLowerCase();
+			//Create detector, transfer input string to decision class
 			Decision detector = new Decision(input);
-	
+			//Get response from detector
 			response.append("JARVIS response: \n"+detector.getResponse()+"\n");
 
 			
