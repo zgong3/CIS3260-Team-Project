@@ -191,7 +191,7 @@ public class VoicePanel extends JPanel {
 							result = speechResult.getHypothesis();
 							
 							response.append("\n Recongnized command: “" + result + "”");
-							//makeDecision(result);
+							//transfer recognized commmand to decision class
 							new Decision(result);
 		
 							response.append("\n JARVIS responded.");
